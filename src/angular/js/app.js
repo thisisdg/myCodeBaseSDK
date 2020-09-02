@@ -1,0 +1,3 @@
+function dummy() {
+    alert('yo');
+}
