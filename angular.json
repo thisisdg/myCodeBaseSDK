@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "one-to-one-voice": {
+    "my-code-base-sdk": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "one-to-one-voice-call:build"
+            "browserTarget": "my-code-base-sdk:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "one-to-one-voice-call:build:production"
+              "browserTarget": "my-code-base-sdk:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "one-to-one-voice-call:build"
+            "browserTarget": "my-code-base-sdk:build"
           }
         },
         "test": {
@@ -114,15 +114,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "src/angular/e2e/protractor.conf.js",
-            "devServerTarget": "one-to-one-voice-call:serve"
+            "devServerTarget": "my-code-base-sdk:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "one-to-one-voice-call:serve:production"
+              "devServerTarget": "my-code-base-sdk:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "one-to-one-voice-call"
+  "defaultProject": "my-code-base-sdk"
 }
